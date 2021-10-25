@@ -1,0 +1,96 @@
+(CSS:)
+	
+	- pointer-events: none; > retira evento de click 
+ 
+	- class img-responsive
+	
+	- object-fit: cover; 
+
+	- Medidas (em): 2em = 2x o tamanho da fonte original/padrão
+
+	- Clear: left; serve para limpar os floats
+
+	- vertical-align: center; forma de alinhar elementos
+
+	- nth-child(2n) pega os elementos pares
+
+	- .exemplo:first-letter{} código para selecionar a primeira letra
+	
+	- .exemplo:first-line{}	código para selecionar a primeira linha
+
+	- .exemplo p:not(#teste) {}	seleciona todod as tags <p> que não possuem o id #teste
+
+	- calc(100% - 80px);
+
+	- rgb (0, 0, 0) rgba (0, 0, 0, 0.3); rgba possui a opção de add opacidade
+
+	- tag <main> em todas as páginas, englobando o conteúdo da página
+
+	- GRADIENTE
+		background: linear gradiente (orange, blue); forma de se fazer gradiente, é possivel colocar quantas cores for necessário
+
+		background: linear gradiente (orange 50%, blue); 50% dita o espaço que deve tomar
+
+		background: radial gradiente (orange 50%, blue); radial para um gradiente circular
+
+		background: linear gradiente (90deg, orange, blue); fornece um parametro de inclinação
+
+	- SOMBRA
+		box-shadow: 10px 10px 5px 20px #000000;	X - Y - BLUR - INTENSIDADE - COLOR
+		
+		box-shadow: 10px 10px 5px 20px #000000, -10px -10px 5px 20px red; é possivel adicionar quantas sombras forem necessárias
+		
+		box-shadow: inset 0 0 30px #ff0000; para uma sombra interna
+
+		text-shadow: 2px 2px #ff0000; sombra para textos
+
+(HTML)
+
+-collapse
+	<div id="bloco-collapse"> [div pai dos itens]
+		<h2 data-toggle="collapse" data="target="#objeto" data-parent="bloco-collapse">
+
+		[data-toggle = diz o que fazer] 
+		[data target = diz com quem fazer]
+		[data parent = diz de qual grupo pertence, assim se um item estiver aberto, ao clicar em outro o primeiro se fecha]
+
+
+			Objeto Click
+		</h2>
+		<p id="objeto">
+			objeto open
+		</p>
+
+
+		<h2 data-toggle="collapse" data="target="#objeto2" data-parent="bloco-collapse">
+			Objeto Click 2
+		</h2>
+		<p id="objeto2">
+			objeto open 2
+		</p>		
+	</div>
+
+
+(PHP:)
+
+	- array basico : 
+
+		<?php for ($i = 1; $i <= 4; $i++) { ?>
+
+		<?php } ?>
+
+
+(JAVASCRIPT:)
+	
+
+
+(LEMBRAR:)
+
+	-usar tag figure
+	-usar tag main
+	-usar tag article
+	class container-fluid
+
+
+(GIT:)			
+	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
