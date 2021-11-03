@@ -1,5 +1,27 @@
 (CSS:)
 	
+	- padrão bem 
+		bloco__blog = classe padrao para o bloco  	
+		bloco__contato = classe padrao para o bloco
+		bloco__blog--azul = bloco padrao do blog, porém com uma modificação
+		bloco--azul = caso seja necessario ter uma classe para usar em mais de um lugar
+
+		doc: https://en.bem.info/methodology/quick-start/
+
+	-Para definirmos a altura em porcentagem do nosso <header>
+		html, body{
+			height: 100%;
+		}
+	
+	-centralização com %
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%)
+
+	- centralização com vertical alignmen
+		display: table;
+		vertical-align: middle;
+	
 	- pointer-events: none; > retira evento de click 
  
 	- class img-responsive
@@ -9,8 +31,6 @@
 	- Medidas (em): 2em = 2x o tamanho da fonte original/padrão
 
 	- Clear: left; serve para limpar os floats
-
-	- vertical-align: center; forma de alinhar elementos
 
 	- nth-child(2n) pega os elementos pares
 
@@ -26,25 +46,23 @@
 
 	- tag <main> em todas as páginas, englobando o conteúdo da página
 
-	- GRADIENTE
-		background: linear gradiente (orange, blue); forma de se fazer gradiente, é possivel colocar quantas cores for necessário
 
-		background: linear gradiente (orange 50%, blue); 50% dita o espaço que deve tomar
-
-		background: radial gradiente (orange 50%, blue); radial para um gradiente circular
-
-		background: linear gradiente (90deg, orange, blue); fornece um parametro de inclinação
-
-	- SOMBRA
-		box-shadow: 10px 10px 5px 20px #000000;	X - Y - BLUR - INTENSIDADE - COLOR
-		
-		box-shadow: 10px 10px 5px 20px #000000, -10px -10px 5px 20px red; é possivel adicionar quantas sombras forem necessárias
-		
-		box-shadow: inset 0 0 30px #ff0000; para uma sombra interna
-
-		text-shadow: 2px 2px #ff0000; sombra para textos
+	- text-shadow: 2px 2px #ff0000; sombra para textos
+	
+	#alinhamento de itens
+ 	  display: inline-block;
+  	  vertical-align: middle; 
 
 (HTML)
+
+- uma container pode ser uma section
+
+- padrão bem
+
+	bloco
+	bloco__elemento 
+	bloco--modificador
+	bloco__elemento--modificador
 
 -collapse
 	<div id="bloco-collapse"> [div pai dos itens]
@@ -53,6 +71,12 @@
 		[data-toggle = diz o que fazer] 
 		[data target = diz com quem fazer]
 		[data parent = diz de qual grupo pertence, assim se um item estiver aberto, ao clicar em outro o primeiro se fecha]
+		
+		figcaption = para desc de uma figura, é o caso do conteúdo de um card
+		
+		embed-responsive para iframes/mobile
+		
+		<address> : para endereço
 
 
 			Objeto Click
@@ -81,7 +105,17 @@
 
 
 (JAVASCRIPT:)
-	
+
+- adicionar css com json 
+	adicionando : 
+	$('#collapse-navbar').on('show.bs.collapse', function(){
+		$('.topCasaFina-banner').css('transform', 'translate(-50%, 10%)');
+	});
+
+	removendo : 
+	$('#collapse-navbar').on('hide.bs.collapse', function(){
+		$('.topCasaFina-banner').css('transform', 'translate(-50%, -50%)');
+	});;
 
 
 (LEMBRAR:)
@@ -90,7 +124,38 @@
 	-usar tag main
 	-usar tag article
 	class container-fluid
+	usar jumbotrom
+	- adicionar comentario nas logos do site
+	 <a class="navbar-brand" href="<?php echo home_url(); ?>/" title="<?php echo bloginfo('name'); ?>">
+                <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.png" alt="Logo <?php echo bloginfo('name'); ?>">
+            </a>	
+
+(atalhos)
+	alt + top
+	alt + down
+	movimentam a linha
+
 
 
 (GIT:)			
-	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
+
+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
+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
+
+
+limitar caracter s (linhas)
+
+overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  
+(img vs background)
+	'Normalmente as imagens setadas no CSS são apenas para definições visuais sem impacto, relevância ou semântica na pág'
+	'Um arquivo CSS é responsável por estilização e o HTML é responsável por informação.'
+	a imagem deve ser bg quando não for inserida pelo usuário 
+	(quando for apenas para ilustração),
+	caso contrário sempre usar imagem
+
+
+
