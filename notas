@@ -120,6 +120,7 @@
 
 (LEMBRAR:)
 
+	- usar tag time
 	-usar tag figure
 	-usar tag main
 	-usar tag article
@@ -156,6 +157,12 @@ overflow: hidden;
 	a imagem deve ser bg quando não for inserida pelo usuário 
 	(quando for apenas para ilustração),
 	caso contrário sempre usar imagem
+	
+	
+(ADICIONAR AO PADRÃO)
+
+	-adicionar em nav-link: visited, active c/opacity || filter
+	
 
 
 
