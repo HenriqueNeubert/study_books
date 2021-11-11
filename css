@@ -48,8 +48,9 @@
 	- text-shadow: 2px 2px #ff0000; sombra para textos
 	
 	#alinhamento de itens
- 	  display: inline-block;
-  	  vertical-align: middle; 
+ 	  display: inline-block;//pai
+  	  vertical-align: middle; //filho
+	    display: table-cell; //filho
 
       alinhamento horizontal
             display: block;
@@ -67,3 +68,8 @@ overflow: hidden;
 
 overflow: auto; 
 		pode adaptar ao tamanho
+
+Organizar css por ordem alfabética
+
+flex-shrink: 0; não diminui
+flex-shrink: 2; diminui 2x mais 
