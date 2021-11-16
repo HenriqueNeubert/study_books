@@ -1,10 +1,55 @@
-- usar tag time
--usar tag figure
--usar tag main
--usar tag article
-class container-fluid
-usar jumbotrom
-- adicionar comentario nas logos do site
+TAGS
+
+      time
+      figure
+      main
+      article
+      sidebar
+      addres (envolvendo dados de contato)
+
+TAGS
+
+CLASSES 
+
+       container-fluid
+
+CLASSES
+
+EXTENSÕES
+
+      -installar emmet 
+      -instalar intellisense
+
+EXTENSÕES
+
+BLOCOS
+
+      podemos adicionar um atributo ao html com 
+	um nome a escolha, podendo usar ele no js
+	exemplo: data-teste=""
+
+      jumbotrom
+
+      uma container pode ser uma section
+
+BLOCOS
+
+PADRÃO 
+
+      - adicionar comentario nas logos do site
       <a class="navbar-brand" href="<?php echo home_url(); ?>/" title="<?php echo bloginfo('name'); ?>">
             <img src="<?php echo get_template_directory_uri() ?>/assets/img/logo.png" alt="Logo <?php echo bloginfo('name'); ?>">
-      </a>	
+      </a>
+
+      testar iniciar projeto pelos elementos (componentes)
+
+
+PADRÃO 
+
+
+
+	
+
+
+
+

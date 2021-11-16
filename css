@@ -1,75 +1,82 @@
-	- padrão bem 
-		bloco__blog = classe padrao para o bloco  	
-		bloco__contato = classe padrao para o bloco
-		bloco__blog--azul = bloco padrao do blog, porém com uma modificação
-		bloco--azul = caso seja necessario ter uma classe para usar em mais de um lugar
-
-		doc: https://en.bem.info/methodology/quick-start/
+UTEIS
 
 	-Para definirmos a altura em porcentagem do nosso <header>
 		html, body{
 			height: 100%;
-		}
-	
-	-centralização com %
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%)
-
-	- centralização com vertical alignmen
-		display: table;
-		vertical-align: middle;
-	
-	- pointer-events: none; > retira evento de click 
- 
-	- class img-responsive
-	
-	- object-fit: cover; 
+		} *TESTAR*
 
 	- Medidas (em): 2em = 2x o tamanho da fonte original/padrão
 
+	- text-shadow: 2px 2px #ff0000; sombra para textos
+
+	- calc(100% - 80px);
+
 	- Clear: left; serve para limpar os floats
+
+	- pointer-events: none; > retira evento de click 
+	
+	- object-fit: cover; 
+
+UTEIS
+
+SELECIONANDO
 
 	- nth-child(2n) pega os elementos pares
 
 	- .exemplo:first-letter{} código para selecionar a primeira letra
-	
+
 	- .exemplo:first-line{}	código para selecionar a primeira linha
 
 	- .exemplo p:not(#teste) {}	seleciona todod as tags <p> que não possuem o id #teste
+    
+SELECIONANDO
 
-	- calc(100% - 80px);
+NOVOS APRENDIZADOS
 
-	- rgb (0, 0, 0) rgba (0, 0, 0, 0.3); rgba possui a opção de add opacidade
+	-centralização com %
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%)
 
-	- tag <main> em todas as páginas, englobando o conteúdo da página
+	- centralização com vertical alignmen
+	display: table;
+	vertical-align: middle;
 
-
-	- text-shadow: 2px 2px #ff0000; sombra para textos
-	
 	#alinhamento de itens
- 	  display: inline-block;//pai
-  	  vertical-align: middle; //filho
-	    display: table-cell; //filho
+	display: inline-block;//pai
+	vertical-align: middle; //filho
+	display: table-cell; //filho
 
-      alinhamento horizontal
-            display: block;
-            margin: 0 auto;
+	alinhamento horizontal
+	display: block;
+	margin: 0 auto;
 
 	position: sticky;
-		parecido com fixed, porém tem uma caracteristica 'grudenta'
-		
-limitar caracter s (linhas)
+	parecido com fixed, porém tem uma caracteristica 'grudenta'
 
-overflow: hidden;
+	overflow: auto; 
+	pode adaptar ao tamanho
+
+NOVOS APRENDIZADOS
+
+IDÉIAS
+
+	Organizar css por ordem alfabética
+
+IDÉIAS
+
+LIMITE DE LINHAS
+
+	overflow: hidden;
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
 
-overflow: auto; 
-		pode adaptar ao tamanho
+LIMITE DE LINHAS
 
-Organizar css por ordem alfabética
+FLEX-BOX
 
-flex-shrink: 0; não diminui
-flex-shrink: 2; diminui 2x mais 
+	flex-shrink: 0; não diminui
+	flex-shrink: 2; diminui 2x mais 
+
+FLEX-BOX

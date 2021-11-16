@@ -1,17 +1,48 @@
-- uma container pode ser uma section
+PADRÃO BEM
 
-- padrão bem
+	BEM = bloco - elemento - modificador
 
-	bloco
-	bloco__elemento 
-	bloco--modificador
-	bloco__elemento--modificador
+	- padrão bem 
+		bloco__blog = classe padrao para o bloco  	
+		bloco__contato = classe padrao para o bloco
+		bloco__blog--azul = bloco padrao do blog, porém com uma modificação
+		bloco--azul = caso seja necessario ter uma classe para usar em mais de um lugar
+
+		doc: https://en.bem.info/methodology/quick-start/
+
+	<ul class="list">
+		<li class="list__item">
+			<h2 class="list__title">My publication</h2>
+			<p class="list__author>Julio Lozovei</p>
+			<p class="list__text">A publication using BEM :)</p>
+		</li>
+	</ul>
+
+	Nossa primeira classe sempre será o bloco: .list
+	Para criarmos os elementos, utilizamos 2 underlines ( __ ) após o nome do nosso bloco: .list__item, .list__title
+	Para criarmos os modificadores, utilizamos 2 traços ( — ) no nosso bloco ou elemento: .list__item--highlight, .list__author--active
 	
-- data-teste
-	podemos adicionar um atributo ao html com 
-	um nome a escolha, podendo usar ele no js
 
--collapse
+PADRÃO BEM
+
+EMMET
+
+	Exemplo básico:
+	main>section.container>div.d-flex>aside{Escrever aqui}
+
+	> = acresc-tag
+	. = acresc-classe
+	$ = contador
+	\$ = para cifrao
+	{} = acresc-Conteúdo
+	[] = acresc-atributo
+	+ = acresc-mais uma tag irmã
+	* = qt-de vezes a se repetir
+
+EMMET
+
+ESTRUTURA COLLAPSE
+
 	<div id="bloco-collapse"> [div pai dos itens]
 		<h2 data-toggle="collapse" data="target="#objeto" data-parent="bloco-collapse">
 
@@ -43,3 +74,20 @@
 		</p>		
 	</div>
 
+ESTRUTURA COLLAPSE
+
+SOBRE IMAGENS
+
+	'Normalmente as imagens setadas no CSS são apenas para definições visuais sem impacto, relevância ou semântica na pág'
+	'Um arquivo CSS é responsável por estilização e o HTML é responsável por informação.'
+	a imagem deve ser bg quando não for inserida pelo usuário 
+	'quando for apenas para ilustração',
+	caso contrário sempre usar imagem
+
+SOBRE IMAGENS
+
+BOOTSTRAP 
+
+	class img-responsive
+
+BOOTSTRAP
