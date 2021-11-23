@@ -71,26 +71,96 @@ LIMITE DE LINHAS
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
-
-LIMITE DE LINHAS
-
-FLEX-BOX
-
+	
+	LIMITE DE LINHAS
+	
+	FLEX-BOX
+	
 	flex-shrink: 0; não diminui
 	flex-shrink: 2; diminui 2x mais 
-
-FLEX-BOX
-
-SCSS
-
+	
+	FLEX-BOX
+	
+	SCSS
+	
 	placeholder selector
 	exemplo:
+	
+	
+	declarar:
 	%no-decoration{
 		text-decoration: none;
 	}
+	imprimir:
 	.teste{
 		@extend %no-decoration;
 	}
+	
+	MIXIN-A
+	@mixin flex($property, $jty-cnt){
+		display: flex;
+		#{$property}: $jty-cnt;
+	}
+	
+	.btn{
+		@include flex(justify-content, center);		
+	 }
+	 MIXIN-A
 
+	MIXIN-B
+
+	@mixin reset-list{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	.btn{
+		@include reset-list;
+	}
+
+@mixin font($family, $size, $line, $weight){
+	font-family: $family;
+	font-size: $size;
+	line-height: $line;
+	font-weight: $weight;
+}
+
+@include font('helvetica, 1.4em, 16px, 400');
+
+	 MIXIN-B
+
+	 CALCULO PX TO REM
+
+		@function calculate($size){
+			@return $size / 16px * 1rem;
+		}
+
+		@mixin fontSize($size){
+			font-size: $size;
+			font-size: calculate($size);
+		}
+
+		@include font(16px);
+
+		IMPORT
+
+		_arquivo.scss //nome do arquivo
+
+		@import 'header'; //como importar
+		@import 'header', 'footer'; //como importar
+		IMPORT
+		
+		ESTUDAR EACH NOVAMENTES
+		ESTUDAR IF OR ELSE NOVAMENTES
+		ESTUDAR WHILE NOVAMENTES
 
 SCSS
+
+%btn-azul{	
+	color: #fff;
+}
+
+.btn-default{
+	@extend %btn-azul;
+}
+
