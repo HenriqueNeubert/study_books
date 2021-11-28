@@ -12,3 +12,15 @@ ADD CSS COM JS
 
 ADD CSS COM JS
 
+ATUALIZAR ANO AUTOMATICAMENTE
+
+    // função para atualizar ano automaticamente (1-HORA DE TRABALHO)
+    // function autoYear(){
+    //     var year = new Date().getFullYear();
+    //     var getId = document.getElementById('dateAuto');
+    //     var textById = getId.innerHTML;
+    //     var troca = textById.replace(textById, year);
+    //     getId.innerHTML = troca;
+    // }
+
+ATUALIZAR ANO AUTOMATICAMENTE

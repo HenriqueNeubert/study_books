@@ -80,3 +80,11 @@ FLEX-BOX
 	flex-shrink: 2; diminui 2x mais 
 
 FLEX-BOX
+
+		.minha{
+			&__classe{
+				background: red!important; /*TESTAR*/
+			}
+		}
+
+SCSS
