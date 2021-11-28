@@ -5,7 +5,7 @@ TAGS
       main
       article
       sidebar
-      addres (envolvendo dados de contato)
+      address (envolvendo dados de contato)
 
 TAGS
 
@@ -45,6 +45,8 @@ PADRÃO
 
 
 PADRÃO 
+
+INPUTMODE="NUMERIC"  *(PESQUISAR SE HÁ OUTROS MODOS)
 
 
 
