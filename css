@@ -174,3 +174,42 @@ FLEX-BOX
 
 SCSS
 
+BOOTSTRAP 5
+
+media query
+	Ponto de interrupção único
+	@include media-breakpoint-only(xs)
+	Entre
+	@include media-breakpoint-between(md, xl)
+media query
+
+container-sm/md/xl/xxl = é width: 100%até o ponto de interrupção especificado
+
+opção de row cols
+ex:
+<div class="container">
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+    	<div class="col">Column</div>
+    	</div>
+    </div>
+</div>
+    opção de row cols
+
+offset
+
+//funciona para compensar cols não existentes
+offset-md-3
+//tanto na visualização padrão quanto apenas a paritir de tal resolução
+<div class="row">
+	<div class="col-sm-6 col-md-5 col-lg-6">.col-sm-6 .col-md-5 .col-lg-6</div>
+	<div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</div>
+</div>
+
+PAREI EM COLUNAS
+https://getbootstrap.com/docs/5.0/layout/columns/
+
+offset
+
+
+BOOTSTRAP 5
+

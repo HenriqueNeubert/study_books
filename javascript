@@ -26,6 +26,17 @@ ATUALIZAR ANO AUTOMATICAMENTE
 
 ATUALIZAR ANO AUTOMATICAMENTE
 
+HOVER + ADD CLASS
+
+
+     // $(".botaoHenrique").hover(function(){
+    //     let valor = $(this).attr("data-valor");
+    //     $(".henriquao").html("<p>"+valor+"</p>")
+    //     return false;
+    // });
+
+    HOVER + ADD CLASS
+
 function trocaCores(){
 	let posicaoScrool = $(window).scrollTop();
 	let header = $("#header").height();
@@ -53,12 +64,6 @@ function trocaCores(){
 // 	$(".henriquao").html("<p>"+valor+"</p>")
 // 	return false;
 //   });
-
-    // $(".botaoHenrique").hover(function(){
-    //     let valor = $(this).attr("data-valor");
-    //     $(".henriquao").html("<p>"+valor+"</p>")
-    //     return false;
-    // });
 
     // $(".lista a").each(function(i){
     //     $(".lista a").eq(i).click(function(){
