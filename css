@@ -205,11 +205,27 @@ offset-md-3
 	<div class="col-sm-6 col-md-5 offset-md-2 col-lg-6 offset-lg-0">.col-sm-6 .col-md-5 .offset-md-2 .col-lg-6 .offset-lg-0</div>
 </div>
 
-PAREI EM COLUNAS
+COL
+
+col-auto = mantém tamanho do conteudo da divis
+col = mantém o tamanho 
+
+COL
+
+GUTTERS
+
+ESPAÇAMENTO ENTRE DIVS
+gy-5/gx-4/g3 = gutters 
+
+d-flex/d-grid && gap-2 = gap 
+
+
+GUTTERS
 https://getbootstrap.com/docs/5.0/layout/columns/
 
 offset
 
+PAREI EM https://getbootstrap.com/docs/5.0/content/reboot/?optionsRadios=option2 PAREI EM
 
 BOOTSTRAP 5
 
