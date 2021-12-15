@@ -1,85 +1,131 @@
-UTEIS
-
-	-Para definirmos a altura em porcentagem do nosso <header>
+.UTEIS{
+	/* -Para definirmos a altura em porcentagem do nosso <header> */
 		html, body{
 			height: 100%;
 		} *TESTAR*
 
-	- Medidas (em): 2em = 2x o tamanho da fonte original/padrão
+	/* Medidas (em):  */
+	.Ex{
+		margin-top: 2em; /*= 2x o tamanho da fonte original/padrão*/
+	}
 
-	- text-shadow: 2px 2px #ff0000; sombra para textos
+	/* Text-shadow*/
+	.Ex{
+		text-shadow: 2px 2px #ff0000;   /*sombra para textos*/
+	}
 
-	- calc(100% - 80px);
+	/*Exemplo de calculo */
+	.Ex{
+		width: calc(100% - 80px);  
+	}
 
-	- Clear: left; serve para limpar os floats
+	/* Serve para limpar os floats */
+	.Ex{
+		clear: left; 
+	}
 
-	- pointer-events: none; > retira evento de click 
+	/* Adiciona posicionamento igual para todos os lados */
+	.Ex{
+		inset: 1; /* top: 1; right: 1; left: 1; bottom: 1;*/  
+	}
+
+	/* Retirar eventos de click */
+	.Ex{
+		pointer-events: none; /* retira evento de click*/ 
+	}
 	
-	- object-fit: cover; 
+	.Ex{
+		object-fit: cover; 
+	}
+}
 
-UTEIS
 
-SELECIONANDO
+.SELECIONANDO{
 
-	- nth-child(2n) pega os elementos pares
+	.Ex{
+		&:nth-child(2n){
+			// pega os elementos pares
+		} 
+	}
 
-	- .exemplo:first-letter{} código para selecionar a primeira letra
+	.Ex{
+		&:first-letter{
+			// código para selecionar a primeira letra
+		} 
+	}
 
-	- .exemplo:first-line{}	código para selecionar a primeira linha
+	.Ex{
+		&:first-line{
+			// código para selecionar a primeira linha
+		} 
+	}
 
-	- .exemplo p:not(#teste) {}	seleciona todod as tags <p> que não possuem o id #teste
-    
-SELECIONANDO
+	.Ex{
+		&:not(#teste){
+			// seleciona todod as tags <p> que não possuem o id #teste
+		} 
+	}	
 
-NOVOS APRENDIZADOS
+}
 
-	-centralização com %
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%)
+.NOVOS_APRENDIZADOS{
 
-	- centralização com vertical alignmen
-	display: table;
-	vertical-align: middle;
+	// centralização com %
+	.Ex{
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%)
+	}
 
-	#alinhamento de itens
-	display: inline-block;//pai
-	vertical-align: middle; //filho
-	display: table-cell; //filho
+	// centralização com vertical align
+	.Ex{
+		display: table;
+		vertical-align: middle;
+	}
 
-	alinhamento horizontal
-	display: block;
-	margin: 0 auto;
+	// #alinhamento de itens
+	.Ex{
+		display: inline-block;//pai
+		vertical-align: middle; //filho
+		display: table-cell; //filho
+	}
 
-	position: sticky;
-	parecido com fixed, porém tem uma caracteristica 'grudenta'
+	// alinhamento horizontal
+	.Ex{
+		display: block;
+		margin: 0 auto;
+	}
 
-	overflow: auto; 
-	pode adaptar ao tamanho
+	// parecido com fixed, porém tem uma caracteristica 'grudenta'
+	.Ex{
+		position: sticky;
+	}
 
-NOVOS APRENDIZADOS
-
-IDÉIAS
-
-	Organizar css por ordem alfabética
-
-IDÉIAS
-
-LIMITE DE LINHAS
-
-	overflow: hidden;
-	display: -webkit-box;
-	-webkit-line-clamp: 3;
-	-webkit-box-orient: vertical;
 	
-	LIMITE DE LINHAS
-	
-	FLEX-BOX
-	
-	flex-shrink: 0; não diminui
-	flex-shrink: 2; diminui 2x mais 
-	
-	FLEX-BOX
+	// pode adaptar ao tamanho
+	.Ex{
+		overflow: auto; 
+	}
+
+	// limite de linhas
+	.Ex{
+		overflow: hidden;
+		display: -webkit-box;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+	}
+
+	// flex-box
+	.Ex{	
+		flex-shrink: 0;  //não diminui
+		flex-shrink: 2; //diminui 2x mais 
+	}
+
+}
+
+.IDEIAS{
+	// Organizar css por ordem alfabética
+}
 	
 	SCSS
 	
@@ -228,4 +274,6 @@ offset
 PAREI EM https://getbootstrap.com/docs/5.0/content/reboot/?optionsRadios=option2 PAREI EM
 
 BOOTSTRAP 5
+
+
 
