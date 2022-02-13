@@ -17,6 +17,14 @@ GIT
 
 *ESTUDAR CLAMP*
 
+Para retirar o cache
+
+'/assets/css/style.css?v=123'
+
+'/assets/css/style.css?'.date('ydms')
+
+Para retirar o cache
+
 	
 
 

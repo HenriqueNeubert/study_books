@@ -1,7 +1,0 @@
-	-adicionar em nav-link: visited, active c/opacity || filter
-
-form {
-      br{
-            display: none!important;
-      }
-}

@@ -72,3 +72,38 @@
     //     });
     // });
 
+    //scrollheader
+
+    function scrolltop() {
+
+        var scroller = $(document).scrollTop();
+        
+        if (scroller > 50) {
+        
+        $("header").addClass("scroller");
+        
+        } else {
+        
+        $("header").removeClass("scroller");
+        
+        }
+        
+        }
+        
+        //NO SCROLL JQUERY
+        
+        $(window).scroll(function () {
+        
+        scrolltop();
+        
+        if (jQuery(this).scrollTop() > 0) {
+        
+        $("header").addClass("light");
+        
+        } else {
+        
+        $("header").removeClass("light");
+        
+        }
+        
+        });
